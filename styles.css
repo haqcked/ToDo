@@ -1,10 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', sans-serif;
+  box-sizing: border-box;
+}
+
 body{
-  background: #2d6a4f;
+  /* background: #2d6a4f; */
+  background-image: url('/images/todo-bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 .container{
-  max-width: 400px;
+  /* max-width: 400px; */
   /* background-color: gainsboro; */
+  width: 100%;
+  max-width: 450px;
+  background: #075e55;
+  margin: 100px auto 20px;
+  padding: 40px 30px 40px;
+  border-radius: 10px;
 }
 
 header h1{
@@ -12,7 +30,7 @@ header h1{
   display: flex;
   justify-content: center;
   padding-top: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 /* search bar */
@@ -48,21 +66,41 @@ header h1{
 }
 
 .search a .fa-solid{
-  color: #1daf;
+  color: #4a8374;
   font-size: 18px;
 }
 
-/* input[type=text],
-input[type=text]:focus{
-  color: #fff;
-  border: none;
-  background: rgba(0,0,0,0.2);
-  max-width: 400px;
-} */
+.todos{
+  margin: 30px auto;
+}
 
-.todos li{
-  background: #40916c;
+ul li{
+  display: flex;
+  justify-content: space-between;
+  background: #4b8475;
   color: whitesmoke;
+  font-size: 17px;
+  padding: 10px 20px;
+  margin: 4px auto;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.add label{
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.add input{
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  padding: 10px;
 }
 
 .delete{
