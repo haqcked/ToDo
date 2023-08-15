@@ -49,6 +49,28 @@ const filterTodos = (term) => {
 search.addEventListener('keyup', e => {
   const term = search.value.trim().toLowerCase();
   filterTodos(term);
+
+  // if(term !== ''){
+  //   addTodo.input.classList.add('expanded')
+  // } else {
+  //   addTodo.input.classlist.remove('expanded')
+  // }
+
+});
+// ---------------------------
+search.addEventListener("input", function () {
+  const searchForm = this.closest('.search');
+
+  if (this.value.trim() !== "") {
+    searchForm.classList.add('expanded');
+  } else {
+    searchForm.classList.remove('expanded');
+  }
+});
+
+search.addEventListener("focus", function () {
+  const searchForm = this.closest('.search');
+  searchForm.classList.add('expanded');
 });
 
 // save and show data
