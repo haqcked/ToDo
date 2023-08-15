@@ -7,7 +7,7 @@
 
 body{
   /* background: #2d6a4f; */
-  background-image: url('/images/todo-bg.jpg');
+  background-image: url('../ToDo/images/todo-bg.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -70,7 +70,7 @@ header h1{
   font-size: 18px;
 }
 
-.search.expanded input,
+.search .expanded input,
 .search input:focus{
   width: 300px;
 }
