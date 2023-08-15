@@ -7,7 +7,7 @@
 
 body{
   /* background: #2d6a4f; */
-  background-image: url('/images/todo-bg.jpg');
+  background-image: url('../images/todo-bg.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -45,7 +45,7 @@ header h1{
   display: flex;
   cursor: pointer;
   padding: 10px 12px;
-  background: white;
+  background: whitesmoke;
   border-radius: 50px;
   align-items: center;
   /* box-shadow: 0 10px 25px rgba(0,0,0,0.3); */
