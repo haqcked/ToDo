@@ -47,7 +47,7 @@ header h1{
   display: flex;
   cursor: pointer;
   padding: 10px 12px;
-  background: whitesmoke;
+  background: #fff;
   border-radius: 50px;
   align-items: center;
 }
@@ -78,7 +78,7 @@ header h1{
 ul li{
   display: flex;
   justify-content: space-between;
-  background: rgba(37, 95, 80, .8);
+  background: rgba(0, 0, 0, 0.2);
   color: whitesmoke;
   font-size: 17px;
   padding: 10px 20px;
@@ -88,7 +88,7 @@ ul li{
 }
 
 .add label{
-  color: white;
+  color: #fff;
   display: flex;
   justify-content: center;
   margin: 20px;
@@ -100,7 +100,10 @@ ul li{
   border: none;
   border-radius: 20px;
   height: 40px;
-  padding: 10px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  font-size: 17px;
 }
 
 .delete{
