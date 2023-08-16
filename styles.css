@@ -6,8 +6,8 @@
 }
 
 body{
-  /* background: #2d6a4f; */
-  background-image: url('../ToDo/images/todo-bg.jpg');
+  /* background-image: url('../ToDo/images/todo-bg.jpg'); */
+  background-image: url('../images/todo-bg.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -15,8 +15,6 @@ body{
 }
 
 .container{
-  /* max-width: 400px; */
-  /* background-color: gainsboro; */
   width: 100%;
   max-width: 450px;
   background: #075e55;
@@ -65,14 +63,9 @@ header h1{
   padding: 0;
 }
 
-.search a .fa-solid{
+.search .fa-solid{
   color: #4a8374;
   font-size: 18px;
-}
-
-.search .expanded input,
-.search input:focus{
-  width: 300px;
 }
 
 .todos{
@@ -88,7 +81,6 @@ ul li{
   padding: 10px 20px;
   margin: 4px auto;
   user-select: none;
-  cursor: pointer;
   border-radius: 20px;
 }
 

@@ -3,8 +3,7 @@ const list = document.querySelector('.todos')
 const search = document.querySelector('.search input')
 
 const createTodo = todo => {
-  const html = `
-  <li>
+  const html = `<li>
     <span>${todo}</span>
     <i class="far fa-trash-alt delete"></i>
   </li>
@@ -49,40 +48,12 @@ const filterTodos = (term) => {
 search.addEventListener('keyup', e => {
   const term = search.value.trim().toLowerCase();
   filterTodos(term);
-
-  // if(term !== ''){
-  //   addTodo.input.classList.add('expanded')
-  // } else {
-  //   addTodo.input.classlist.remove('expanded')
-  // }
-
-});
-// ---------------------------
-search.addEventListener("input", function () {
-  const searchForm = this.closest('.search');
-
-  if (this.value.trim() !== "") {
-    searchForm.classList.add('expanded');
-  } else {
-    searchForm.classList.remove('expanded');
-  }
-});
-
-search.addEventListener("focus", function () {
-  const searchForm = this.closest('.search');
-  searchForm.classList.add('expanded');
 });
 
 // save and show data
 
-function saveData(){
-  localStorage.setItem('data', list.innerHTML);
-}
+const saveData = () => localStorage.setItem('data', list.innerHTML);
 
-function showTodo(){
-  list.innerHTML = localStorage.getItem('data');
-}
+const showTodo = () => list.innerHTML = localStorage.getItem('data');
 
 showTodo()
-
-// add a new function for later
