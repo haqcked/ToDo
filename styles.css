@@ -1,11 +1,11 @@
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', sans-serif;
   box-sizing: border-box;
 }
 
-body{
+body {
   background-image: url('todo-bg.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -13,7 +13,7 @@ body{
   background-size: cover;
 }
 
-.container{
+.container {
   width: 100%;
   max-width: 450px;
   margin: 100px auto 20px;
@@ -27,7 +27,7 @@ body{
   backdrop-filter: blur(10px);
 }
 
-header h1{
+header h1 {
   color: whitesmoke;
   display: flex;
   justify-content: center;
@@ -35,14 +35,14 @@ header h1{
   padding-bottom: 20px;
 }
 
-.search-bar{
+.search-bar {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 10px;
 }
 
-.search{
+.search {
   height: 40px;
   display: flex;
   cursor: pointer;
@@ -52,11 +52,15 @@ header h1{
   align-items: center;
 }
 
-.search:hover input{
+.search:hover input {
   width: 300px;
 }
 
-.search input{
+.search input.active {
+  width: 300px;
+}
+
+.search input {
   width: 0;
   outline: none;
   border: none;
@@ -66,16 +70,16 @@ header h1{
   padding: 0;
 }
 
-.search .fa-solid{
+.search .fa-solid {
   color: #4a8374;
   font-size: 18px;
 }
 
-.todos{
+.todos {
   margin: 30px auto;
 }
 
-ul li{
+ul li {
   display: flex;
   justify-content: space-between;
   background: rgba(0, 0, 0, 0.2);
@@ -87,14 +91,14 @@ ul li{
   border-radius: 20px;
 }
 
-.add label{
+.add label {
   color: #fff;
   display: flex;
   justify-content: center;
   margin: 20px;
 }
 
-.add input{
+.add input {
   width: 100%;
   outline: none;
   border: none;
@@ -106,10 +110,10 @@ ul li{
   font-size: 17px;
 }
 
-.delete{
+.delete {
   cursor: pointer;
 }
 
-.filtered{
+.filtered {
   display: none !important;
 }

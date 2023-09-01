@@ -48,6 +48,15 @@ const filterTodos = (term) => {
 search.addEventListener('keyup', e => {
   const term = search.value.trim().toLowerCase();
   filterTodos(term);
+
+  if(term != ''){
+    search.classList.add('active');
+  } else {
+    search.classList.remove('active');
+    Array.from(list.children)
+    .forEach((todo) => todo.classList.remove('filtered'));
+    saveData();
+  }
 });
 
 // save and show data
